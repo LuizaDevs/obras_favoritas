@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Mukta:wght@300&family=Rubik+Iso&family=Sedgwick+Ave+Display&display=swap');
+
+body {
+    display : block;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+header{
+  padding: 1% 0% 1% 15%;
+  background-color: brown;
+  display: flex;
+  gap: 5%;
+}
+
+.cabecalho{
+  font-family: 'Josefin Sans', sans-serif;
+  color: whitesmoke;
+  text-decoration: none; 
+  font-weight: 400;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.25%;
+  }
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 1.5%;
+  }
+
+  p{
+    color: whitesmoke;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.filmes{
+    padding: 1.25%;
+    align-items: flex-start;
+    gap: 0.5%;
+}
+
+#filmes__{
+    visibility: hidden;
+    display: none;
+}
+
+
+#seta{
+    justify-content: center;
+    padding: 30px 0px 50px 10px;
+}
+
+#seta2{
+    justify-content: center;
+    padding: 0px 10px 50px 30px;
+}
+
+#kena{
+    font-family: 'Mukta', sans-serif;
+    color :aliceblue;
+    font-size: 50px;
+}
+
+#aang{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color :white;
+    font-size: 50px;
+} 
+
+#guardioes{
+    font-family: 'Bebas Neue', sans-serif;
+    color :blueviolet;
+    font-size: 50px;
+}
+
+#delta{
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+#arcane{
+  font-family: 'Mukta', cursive;
+  color :goldenrod;
+  font-size: 50px;
+} 
+
+#gf{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color :chocolate;
+  font-size: 50px;
+} 
+
+.img {
+    transition: transform 0.2s; /* Adiciona uma transição suave */
+    border-radius: 0.9%;
+  }
+
+  .img_ {
+    transition: transform 0.2s;
+    border-radius: 0.9%;
+    border: 4px solid lightcoral;
+  }
+  
+  .img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% no hover */
+  }
+
+  @media (max-width: 1222px) {
+   
+    #seta, #seta2 {
+        visibility: hidden;
+        display: none;
+    }
+
+  }
+
+  
+  @media (max-width: 957px) {
+   
+    #seta, #seta2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .filmes{ 
+       padding: 5% 5% 5% 10%;
+    }
+
+  }
+
+  @media (max-width: 958px) {
+   
+    #seta, #seta2 {
+        visibility: hidden;
+        display: none;
+    }
+
+    .filmes{ 
+       padding: 5% 30% 5% 25%;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+  }
